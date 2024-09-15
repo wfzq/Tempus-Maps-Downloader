@@ -32,15 +32,14 @@ logging.basicConfig(level=logging.INFO,
 def get_maps_list():
     try:
         response = requests.get(GET_MAPS_URL)
-        if response.status_code != 200:
-            raise Exception(f"Error: {response.status_code}")
+        response.raise_for_status()
 
         data = response.json()
         return [element['name'] for element in data]
-    except requests.RequestException:
+    except (requests.RequestException, ValueError):
         logging.info((
             "* Error getting maps list from the tempus website\n"
-            "* Attempting to use local maps_backup_DATE.txt file\n"
+            "* Attempting to use local OPTIONAL_maps_backup.txt file\n"
         ))
 
         try:
