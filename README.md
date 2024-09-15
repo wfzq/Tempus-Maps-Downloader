@@ -13,4 +13,4 @@
 
 ## Releases
 
-You can download the latest version of Tempus Maps Downloader from the [Releases](https://github.com/yourusername/tempus-maps-downloader/releases) page.
+You can download the latest version of Tempus Maps Downloader from the [Releases](https://github.com/wfzq/Tempus-Maps-Downloader/releases) page.
