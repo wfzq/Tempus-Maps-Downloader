@@ -10,3 +10,7 @@
 - It will NOT touch or replace any currently downloaded maps 
 - Can find and download only missing maps without affecting anything else
 - Can download arbitrary maps from a custom list while ignoring the ones you already have
+
+## Releases
+
+You can download the latest version of Tempus Maps Downloader from the [Releases](https://github.com/yourusername/tempus-maps-downloader/releases) page.
